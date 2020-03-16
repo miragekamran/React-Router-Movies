@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import SavedList from './Movies/SavedList';
 import MovieList from './Movies/MovieList';
 import Movie from './Movies/Movie';
@@ -21,15 +20,18 @@ const App = (props) => {
           component={MovieList}
         />
         <Route
-          path='/movies/:movieId'
-          render={props => {
+          path='/movies/:id'
+          component={props => {
+            console.log(props)
             return (
               <Movie
                 {...props}
                 addToSavedList={addToSavedList}
+                list={savedList}
               />
             )
-          }} />
+          }}
+       />
     </div>
   );
 };
