@@ -23,7 +23,7 @@ const Movie = (props) => {
           console.error(error);
         });
 
-  },[]);
+  },[props]);
   
   // Uncomment this only when you have moved on to the stretch goals
   const saveMovie = () => {
@@ -38,9 +38,8 @@ const Movie = (props) => {
   // const { title, director, metascore, stars } = movie;
   return (
     <div>
-      
       <div className="save-wrapper" style={{}}>
-        <div className="movie-card" style={{background: '#a9cfca'}}>
+        <div className="movie-card" style={{background: '#cfe0e3', borderRadius: '10px'}}>
           <MovieCard movie={movie} />
           <div className="save-button" onClick={saveMovie}>Save</div>
         </div>

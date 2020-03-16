@@ -9,7 +9,12 @@ const MovieCard = ({movie}) => {
   
   return (
     <div className="save-wrapper" style={{}}>
-      <div className="movie-card" style={{background: '#32a899'}}>
+      <div className="movie-card" style={{background: '#48afc2', borderRadius: '5px'}}>
+      <img style={{borderRadius: '3px'}}
+        className="home-image"
+        src='https://i3.wp.com/www.digitbin.com/content/uploads/Sites-to-Watch-Movies-Online-600x400.jpg'
+        alt=""
+      />
         <h2>{title}</h2>
         <div className="movie-director">
           Director: <em>{director}</em>
