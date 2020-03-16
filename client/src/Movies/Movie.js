@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MovieCard from './MovieCard';
+import { Link } from 'react-router-dom';
 
 const Movie = (props) => {
   // console.log(props);
@@ -41,11 +42,9 @@ const Movie = (props) => {
       <div className="save-wrapper" style={{}}>
         <div className="movie-card" style={{background: '#cfe0e3', borderRadius: '10px'}}>
           <MovieCard movie={movie} />
-          <div className="save-button" onClick={saveMovie}>Save</div>
+          <Link><div className="save-button" onClick={saveMovie}>Save</div></Link>
         </div>
       </div>
-
-      
     </div>
   );
 }
