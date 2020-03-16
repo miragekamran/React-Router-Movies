@@ -51,6 +51,11 @@ body {
 .save-wrapper {
   position: relative;
   width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-wrap: wrap-reverse; */
+  /* flex-wrap: nowrap; */
   margin: 1rem auto;
 }
 .save-button {

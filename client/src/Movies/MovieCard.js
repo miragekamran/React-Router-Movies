@@ -9,8 +9,8 @@ const MovieCard = ({movie}) => {
   
   return (
     <div className="save-wrapper" style={{}}>
-      <div className="movie-card" style={{background: '#48afc2', borderRadius: '5px'}}>
-      <img style={{borderRadius: '3px'}}
+      <div className="movie-card" style={{background: '#48afc2', borderRadius: '5px', width: '20rem'}}>
+      <img style={{borderRadius: '3px', width: '20%'}}
         className="home-image"
         src='https://i3.wp.com/www.digitbin.com/content/uploads/Sites-to-Watch-Movies-Online-600x400.jpg'
         alt=""
