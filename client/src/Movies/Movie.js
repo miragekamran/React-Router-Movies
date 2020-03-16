@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import MovieCard from './MovieCard';
 
 const Movie = (props) => {
   // console.log(props);
@@ -22,7 +23,7 @@ const Movie = (props) => {
           console.error(error);
         });
 
-  },[props]);
+  },[]);
   
   // Uncomment this only when you have moved on to the stretch goals
   const saveMovie = () => {
@@ -35,7 +36,14 @@ const Movie = (props) => {
   }
 
   // const { title, director, metascore, stars } = movie;
-  return ;
+  return (
+    <div>
+      <MovieCard movie={movie} />
+      <div className="save-button" onClick={saveMovie}>Save</div>
+
+      
+    </div>
+  );
 }
 
 export default Movie;
