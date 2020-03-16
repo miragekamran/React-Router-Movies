@@ -38,8 +38,13 @@ const Movie = (props) => {
   // const { title, director, metascore, stars } = movie;
   return (
     <div>
-      <MovieCard movie={movie} />
-      <div className="save-button" onClick={saveMovie}>Save</div>
+      
+      <div className="save-wrapper" style={{}}>
+        <div className="movie-card" style={{background: '#a9cfca'}}>
+          <MovieCard movie={movie} />
+          <div className="save-button" onClick={saveMovie}>Save</div>
+        </div>
+      </div>
 
       
     </div>
